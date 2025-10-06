@@ -52,6 +52,23 @@ footer {
     justify-content: center; /* centers footer content */
 }
 
+.mission {
+    max-width: 800px;
+    margin: 40px auto;
+    font-family: sans-serif;
+    line-height: 1.6;
+}
+
+.mission ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.mission li {
+    margin-bottom: 12px;
+}
+
+
 .gallery {
     padding: 50px 20px;
     text-align: center;
@@ -161,4 +178,19 @@ footer {
 .team-member p {
     font-size: 0.95em;
     color: #444;
+}
+
+.team-link {
+    text-decoration: none;
+    color: inherit; /* keeps text white/red styling */
+}
+
+.team-link .team-member {
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-link .team-member:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.25);
 }
