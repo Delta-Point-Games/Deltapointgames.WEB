@@ -1,0 +1,164 @@
+H1 {
+    padding: 5px  #ff3131;
+    font-family: sans-serif;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;   /* centers text */
+}
+
+p {
+
+    font-family: sans-serif; 
+}
+
+H2, H3, H4, h5 {
+    font-family: sans-serif;
+    color: #ff3131;
+    text-align: center;   /* centers text */
+}
+
+img {
+    display: block;        /* makes margin: auto work */
+    margin: auto;
+    height: 500px;         /* added px */
+    width: 800px;          /* added px */
+    padding-inline: 5px;
+}
+
+header {
+    color: white;
+    font-family: sans-serif;
+    background-color: #ff3131;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* centers content inside header */
+}
+
+body {
+    font-family: sans-serif;
+    background-color: rgb(255, 255, 255);
+    margin: 0;             /* removes default browser margins */
+    text-align: center;    /* fallback centering */
+}
+
+footer {
+    font-family: sans-serif;
+    color: white;
+    background-color: #ff3131;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* centers footer content */
+}
+
+.gallery {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-family: sans-serif;
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    background: #f5f5f5;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.gallery-item h3 {
+    margin: 15px 0 10px;
+    font-size: 1.4em;
+    color: #ff3131;
+}
+
+.gallery-item p {
+    font-size: 0.95em;
+    color: #444;
+}
+
+.team {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.team h2 {
+    font-family: sans-serif;
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.team-member {
+    background: #fdfdfd;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%; /* makes it circular */
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    margin: 10px 0 5px;
+    font-size: 1.3em;
+    color: #ff3131;
+}
+
+.team-member h4 {
+    margin: 0 0 10px;
+    font-size: 1em;
+    font-weight: 600;
+    color: #555;
+}
+
+.team-member p {
+    font-size: 0.95em;
+    color: #444;
+}
