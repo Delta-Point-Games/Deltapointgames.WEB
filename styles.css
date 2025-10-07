@@ -20,9 +20,8 @@ H2, H3, H4, h5 {
 img {
     display: block;        /* makes margin: auto work */
     margin: auto;
-    height: 500px;         /* added px */
-    width: 800px;          /* added px */
-    padding-inline: 5px;
+    height: auto;         /* added px */
+    width: auto;          /* added px */
 }
 
 header {
