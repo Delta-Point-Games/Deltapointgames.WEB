@@ -1,61 +1,82 @@
-H1 {
-    padding: 5px  #ff3131;
-    font-family: sans-serif;
-    color: #ffffff;
-    padding: 20px;
-    text-align: center;   /* centers text */
+/* === BASE STYLES === */
+:root {
+    --accent-color: #ff3131;
+    --text-color: #333;
+    --bg-light: #f5f5f5;
+    --transition: 0.3s ease;
 }
 
-p {
-
-    font-family: sans-serif; 
+* {
+    box-sizing: border-box;
 }
 
-H2, H3, H4, h5 {
-    font-family: sans-serif;
-    color: #ff3131;
-    text-align: center;   /* centers text */
-}
 
-img {
-    display: block;        /* makes margin: auto work */
-    margin: auto;
-    height: auto;         /* added px */
-    width: auto;          /* added px */
-}
-
-header {
-    color: white;
-    font-family: sans-serif;
-    background-color: #ff3131;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center; /* centers content inside header */
-}
 
 body {
     font-family: sans-serif;
-    background-color: rgb(255, 255, 255);
-    margin: 0;             /* removes default browser margins */
-    text-align: center;    /* fallback centering */
+    background-color: #fff;
+    margin: 0;
+    text-align: center;
+    color: var(--text-color);
 }
 
-footer {
+/* === HEADERS === */
+h1, h2, h3, h4, h5 {
     font-family: sans-serif;
-    color: white;
-    background-color: #ff3131;
+    text-align: center;
+}
+
+h1 {
+    color: #fff;
+    background-color: var(--accent-color);
+    padding: 1rem;
+    font-size: clamp(1.8rem, 2vw + 1rem, 3rem);
+}
+
+h2, h3, h4, h5 {
+    color: var(--accent-color);
+}
+
+/* === HEADER === */
+header {
+    color: #fff;
+    font-family: sans-serif;
+    background-color: var(--accent-color);
     height: 200px;
     display: flex;
     align-items: center;
-    justify-content: center; /* centers footer content */
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
 }
 
+/* === FOOTER === */
+footer {
+    font-family: sans-serif;
+    color: #fff;
+    background-color: var(--accent-color);
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* === IMAGE === */
+img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* === MISSION SECTION === */
 .mission {
     max-width: 800px;
     margin: 40px auto;
-    font-family: sans-serif;
     line-height: 1.6;
+    padding: 0 1rem;
+    text-align: left;
 }
 
 .mission ul {
@@ -67,17 +88,14 @@ footer {
     margin-bottom: 12px;
 }
 
-
+/* === GALLERY === */
 .gallery {
     padding: 50px 20px;
-    text-align: center;
 }
 
 .gallery h2 {
-    font-family: sans-serif;
-    font-size: 2em;
+    font-size: clamp(1.5rem, 2vw + 1rem, 2.5rem);
     margin-bottom: 30px;
-    color: #333;
 }
 
 .gallery-container {
@@ -86,15 +104,18 @@ footer {
     gap: 30px;
     max-width: 1200px;
     margin: 0 auto;
+
+    align-items: stretch; /* makes all grid items the same height */
 }
 
+
 .gallery-item {
-    background: #f5f5f5;
+    background: var(--bg-light);
     border-radius: 12px;
     box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
     overflow: hidden;
     padding: 15px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform var(--transition), box-shadow var(--transition);
 }
 
 .gallery-item:hover {
@@ -112,24 +133,17 @@ footer {
 .gallery-item h3 {
     margin: 15px 0 10px;
     font-size: 1.4em;
-    color: #ff3131;
+    color: var(--accent-color);
 }
 
-.gallery-item p {
-    font-size: 0.95em;
-    color: #444;
-}
-
+/* === TEAM === */
 .team {
     padding: 50px 20px;
-    text-align: center;
 }
 
 .team h2 {
-    font-family: sans-serif;
-    font-size: 2em;
+    font-size: clamp(1.5rem, 2vw + 1rem, 2.5rem);
     margin-bottom: 30px;
-    color: #333;
 }
 
 .team-container {
@@ -138,14 +152,19 @@ footer {
     gap: 30px;
     max-width: 1200px;
     margin: 0 auto;
+    align-items: stretch; /* makes all grid items same height */
 }
 
 .team-member {
-    background: #fdfdfd;
+    background: #fff;
     border-radius: 12px;
     box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
     padding: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform var(--transition), box-shadow var(--transition);
+
+    display: flex;
+    flex-direction: column; /* allows vertical spacing of content */
+    height: 100%; /* fills the grid cell height */
 }
 
 .team-member:hover {
@@ -157,14 +176,14 @@ footer {
     width: 150px;
     height: 150px;
     object-fit: cover;
-    border-radius: 50%; /* makes it circular */
+    border-radius: 50%;
     margin-bottom: 15px;
 }
 
 .team-member h3 {
     margin: 10px 0 5px;
     font-size: 1.3em;
-    color: #ff3131;
+    color: var(--accent-color);
 }
 
 .team-member h4 {
@@ -174,22 +193,67 @@ footer {
     color: #555;
 }
 
-.team-member p {
-    font-size: 0.95em;
-    color: #444;
+/* Optional: make a footer or link stick to bottom */
+.team-member .team-footer {
+    margin-top: auto; /* pushes footer/link to the bottom */
 }
 
 .team-link {
     text-decoration: none;
-    color: inherit; /* keeps text white/red styling */
-}
-
-.team-link .team-member {
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: inherit;
 }
 
 .team-link .team-member:hover {
     transform: translateY(-8px);
     box-shadow: 0px 10px 25px rgba(0,0,0,0.25);
+}
+
+
+/* === RESPONSIVE DESIGN === */
+
+/* Medium screens (tablets) */
+@media (max-width: 992px) {
+    header, footer {
+        height: 150px;
+        font-size: 0.9rem;
+    }
+    .gallery-item img, .team-member img {
+        height: 180px;
+    }
+}
+
+/* Small screens (phones) */
+@media (max-width: 600px) {
+    header, footer {
+        height: auto;
+        padding: 30px 10px;
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        padding: 15px;
+    }
+
+    .mission {
+        padding: 0 10px;
+        margin: 20px auto;
+    }
+
+    .gallery, .team {
+        padding: 30px 10px;
+    }
+
+    .gallery-container, .team-container {
+        gap: 20px;
+    }
+
+    .team-member img {
+        width: 120px;
+        height: 120px;
+    }
+
+    footer {
+        font-size: 0.9em;
+    }
 }
