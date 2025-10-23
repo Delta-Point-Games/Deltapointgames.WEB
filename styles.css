@@ -1,61 +1,64 @@
-H1 {
-    padding: 5px  #ff3131;
+/* === General Typography & Colors === */
+body {
     font-family: sans-serif;
+    background-color: #ffffff;
+    color: #000;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* === Headers === */
+h1 {
     color: #ffffff;
+    background-color: #ff3131;
     padding: 20px;
-    text-align: center;   /* centers text */
+    text-align: center;
+    font-family: sans-serif;
 }
 
-p {
-
-    font-family: sans-serif; 
-}
-
-H2, H3, H4, h5 {
+h2, h3, h4, h5 {
     font-family: sans-serif;
     color: #ff3131;
-    text-align: center;   /* centers text */
+    text-align: center;
 }
 
-img {
-    scale: auto;
-    display: block;        /* makes margin: auto work */
-    margin: auto;
-    height: auto;        /* added px */
-    width: auto;          /* added px */
-    padding-inline: 5px;
-    display: flex;
-    align-items: center;
-    
+/* === Paragraphs === */
+p {
+    font-family: sans-serif;
+    line-height: 1.6;
 }
 
+/* === Header Bar === */
 header {
     color: white;
     font-family: sans-serif;
     background-color: #ff3131;
     height: 100px;
-    display: block;
+    display: flex;
     align-items: center;
-    justify-content: center; /* centers content inside header */
+    justify-content: center;
 }
 
-main {
-
-    height: 100px;
+/* === Images === */
+img {
     display: block;
-    align-items: center;
-    justify-content: center; /* centers content inside header */
-
-
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+    padding-inline: 5px;
 }
 
-body {
-    font-family: sans-serif;
-    background-color: rgb(255, 255, 255);
-    margin: 0;             /* removes default browser margins */
-    text-align: center;    /* fallback centering */
+/* === Center images in main === */
+main img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
 }
 
+/* === Footer === */
 footer {
     font-family: sans-serif;
     color: white;
@@ -63,14 +66,15 @@ footer {
     height: 200px;
     display: flex;
     align-items: center;
-    justify-content: center; /* centers footer content */
+    justify-content: center;
 }
 
+/* === Mission Section === */
 .mission {
     max-width: 800px;
     margin: 40px auto;
-    font-family: sans-serif;
     line-height: 1.6;
+    text-align: left;
 }
 
 .mission ul {
@@ -82,14 +86,13 @@ footer {
     margin-bottom: 12px;
 }
 
-
+/* === Gallery Section === */
 .gallery {
     padding: 50px 20px;
     text-align: center;
 }
 
 .gallery h2 {
-    font-family: sans-serif;
     font-size: 2em;
     margin-bottom: 30px;
     color: #333;
@@ -135,13 +138,13 @@ footer {
     color: #444;
 }
 
+/* === Team Section === */
 .team {
     padding: 50px 20px;
     text-align: center;
 }
 
 .team h2 {
-    font-family: sans-serif;
     font-size: 2em;
     margin-bottom: 30px;
     color: #333;
@@ -172,7 +175,7 @@ footer {
     width: 150px;
     height: 150px;
     object-fit: cover;
-    border-radius: 50%; /* makes it circular */
+    border-radius: 50%;
     margin-bottom: 15px;
 }
 
@@ -196,7 +199,7 @@ footer {
 
 .team-link {
     text-decoration: none;
-    color: inherit; /* keeps text white/red styling */
+    color: inherit;
 }
 
 .team-link .team-member {
