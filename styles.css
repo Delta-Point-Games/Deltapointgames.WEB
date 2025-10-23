@@ -39,6 +39,16 @@ header {
     justify-content: center; /* centers content inside header */
 }
 
+main {
+
+    height: 100px;
+    display: block;
+    align-items: center;
+    justify-content: center; /* centers content inside header */
+
+
+}
+
 body {
     font-family: sans-serif;
     background-color: rgb(255, 255, 255);
