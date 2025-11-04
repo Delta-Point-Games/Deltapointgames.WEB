@@ -6,6 +6,9 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
+    overflow-x: hidden; /* prevents horizontal scrolling */
+    min-width: 100vw;        /* 100% instead of 100vw to avoid scrollbar overflow */
+    box-sizing: border-box;
 }
 
 /* === Headers === */
@@ -15,12 +18,15 @@ h1 {
     padding: 20px;
     text-align: center;
     font-family: sans-serif;
+    margin: 0;
 }
 
 h2, h3, h4, h5 {
     font-family: sans-serif;
     color: #ff3131;
     text-align: center;
+    margin: 0;
+    padding: 5px;
 }
 
 /* === Paragraphs === */
@@ -35,28 +41,43 @@ header {
     font-family: sans-serif;
     background-color: #ff3131;
     height: 100px;
+    width: 1
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0;
+}
+
+.Hero {
+    width: 100vw;              /* full viewport width */
+    height: auto;              /* adapt height to content (or set fixed height below) */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;          /* prevent image overflow edge bleed */
+    position: relative;
+}
+
+.Hero img {
+    display: block;
+    width: 100vw;              /* stretch fully side to side */
+    height: auto;              /* maintain aspect ratio */
+    margin: 0;
+    padding: 0;
+    object-fit: cover;         /* fill space gracefully */
+    border: none;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%); /* ensure pixel-perfect centering */
 }
 
 /* === Images === */
 img {
     display: block;
-    margin: auto;
     max-width: 100%;
     height: auto;
     padding-inline: 5px;
 }
 
-/* === Center images in main === */
-main img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100%;
-    height: auto;
-}
 
 /* === Footer === */
 footer {
@@ -67,6 +88,20 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    margin: 0px;
+}
+
+/* === Mission Text Bubble === */
+.missiontext {
+    background: #f5f5f5;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-weight: bold;
+
 }
 
 /* === Mission Section === */
@@ -75,6 +110,8 @@ footer {
     margin: 40px auto;
     line-height: 1.6;
     text-align: left;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .mission ul {
@@ -142,6 +179,7 @@ footer {
 .team {
     padding: 50px 20px;
     text-align: center;
+    height: auto;
 }
 
 .team h2 {
@@ -161,9 +199,11 @@ footer {
 .team-member {
     background: #fdfdfd;
     border-radius: 12px;
+    height: 500px;
     box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
     padding: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 60pxs;
 }
 
 .team-member:hover {
@@ -172,12 +212,14 @@ footer {
 }
 
 .team-member img {
-    width: 150px;
-    height: 150px;
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     border-radius: 50%;
-    margin-bottom: 15px;
 }
+
 
 .team-member h3 {
     margin: 10px 0 5px;
