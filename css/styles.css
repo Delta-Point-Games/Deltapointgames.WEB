@@ -1,0 +1,104 @@
+:root{
+  --bg:#0f1114; /* dark */
+  --panel:#0b0c0e;
+  --muted:#9aa3a8;
+  --accent:#6ad1ff;
+  --text:#e6eef3;
+  --radius:10px;
+  --gap:18px;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased}
+.container{max-width:1080px;margin:0 auto;padding:28px}
+.site-header{backdrop-filter:blur(6px);position:sticky;top:0;z-index:40;border-bottom:1px solid rgba(255,255,255,0.03)}
+.header-inner{display:flex;align-items:center;gap:12px}
+.brand{font-weight:700;color:var(--text);text-decoration:none}
+.main-nav{margin-left:auto;display:flex;gap:12px}
+.main-nav a{color:var(--muted);text-decoration:none}
+.theme-toggle{background:none;border:0;color:var(--muted);font-size:18px}
+
+.brand-wrap{display:flex;align-items:center;gap:10px}
+.brand-icon{width:36px;height:36px;border-radius:6px;object-fit:cover;background:transparent}
+
+.hero-accent{position:absolute;right:3%;top:50%;transform:translateY(-50%);width:140px;height:140px;object-fit:contain;z-index:1;pointer-events:none;opacity:1;background:transparent;filter:drop-shadow(0 8px 20px rgba(0,0,0,0.18))}
+
+.hero{min-height:56vh;display:flex;align-items:center;position:relative}
+.hero-bg{position:absolute;inset:0;background-image:url('../Assets/Images/Snow.gif');background-size:cover;background-position:center;opacity:0.12;filter:grayscale(20%);pointer-events:none;z-index:0}
+.hero-inner{position:relative;padding:60px 0;z-index:3}
+.tagline{color:var(--muted);max-width:54ch}
+.hero-ctas{margin-top:18px;display:flex;gap:10px}
+.btn{display:inline-block;padding:10px 14px;border-radius:8px;background:transparent;color:var(--text);border:1px solid rgba(255,255,255,0.06);text-decoration:none}
+.btn.primary{background:linear-gradient(90deg,var(--accent),#6ab0ff);color:#06202b;border:0}
+
+/* neon 'Open' button (purple) */
+.btn.open{background:linear-gradient(90deg,#9b5cff,#6d34ff);color:#fff;border:0;box-shadow:0 6px 24px rgba(109,52,255,0.18),0 0 32px rgba(155,92,255,0.16);position:relative}
+.btn.open::after{content:'';position:absolute;inset:0;border-radius:8px;box-shadow:0 0 34px rgba(155,92,255,0.18);opacity:0;transition:opacity .18s}
+.btn.open:hover::after{opacity:1}
+
+/* light-theme variant: slightly muted purple for contrast */
+:root.light .btn.open{background:linear-gradient(90deg,#a86fff,#7a4bff);color:#051023}
+
+.about{padding-top:10px}
+.muted{color:var(--muted)}
+
+.projects-controls{display:flex;align-items:center;gap:8px;margin-bottom:12px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--gap)}
+.projects .card,.events .card,.team .card{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:14px;border-radius:8px;border:1px solid rgba(255,255,255,0.03)}
+.projects .card img{width:100%;height:140px;object-fit:cover;border-radius:6px}
+.card h3{margin:8px 0 4px}
+.status{font-weight:700;padding:6px 8px;border-radius:999px;font-size:13px}
+.status.Released{background:#154c2e;color:#a7ffd6}
+.status.In\ Development{background:#3f2a5d;color:#f0d9ff}
+.status.On\ Hold{background:#4a4037;color:#ffe6b3}
+.status.TBA{background:#2b2b3a;color:#dbe7ff}
+
+.events .card img{width:60px;height:60px;object-fit:cover;border-radius:6px}
+.team .card{display:flex;gap:12px;align-items:center}
+.avatar{width:72px;height:72px;border-radius:50%;object-fit:cover;background:linear-gradient(135deg,var(--accent),#7be4ff)}
+
+.news-list .news-item{background:transparent;border-left:3px solid rgba(255,255,255,0.03);padding:10px;margin-bottom:8px}
+
+.site-footer{border-top:1px solid rgba(255,255,255,0.03);padding:22px 0;margin-top:40px}
+
+/* responsive */
+@media (max-width:980px){
+  .grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:640px){
+  .grid{grid-template-columns:1fr}
+  .main-nav{display:none}
+  .hero{min-height:42vh}
+  .hero-accent{display:none}
+}
+
+/* light theme */
+:root.light{--bg:#f7fbff;--panel:#ffffff;--muted:#55646d;--accent:#0066cc;--text:#071217}
+/* remove overlay in light theme so the background is shown unmodified in light mode */
+:root.light .hero::before{content:'';position:absolute;inset:0;z-index:1;pointer-events:none;background:transparent}
+
+/* make hero background fully visible in light theme (do not change dark theme) */
+:root.light .hero-bg{opacity:1}
+
+/* light-theme only: add subtle translucent panel behind hero text to ensure contrast */
+:root.light .hero-inner{
+  background: rgba(255,255,255,0.88);
+  padding: 48px 32px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(22,28,33,0.06);
+  display: inline-block;
+  max-width: 58%;
+  margin-left: auto;
+  margin-right: auto;
+}
+:root.light .hero-inner h1{color:var(--text)}
+:root.light .hero-inner .tagline{color:var(--muted)}
+
+/* subtle fade-in */
+.fade-up{opacity:0;transform:translateY(8px);transition:opacity .5s ease,transform .5s ease}
+.fade-up.visible{opacity:1;transform:none}
+
+/* accessibility focus */
+a:focus,a:active,button:focus{outline:2px dashed var(--accent);outline-offset:3px}
+
+/* prevent horizontal scroll */
+html,body{overflow-x:hidden}

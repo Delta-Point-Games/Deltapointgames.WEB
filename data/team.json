@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Elias Lunden",
+    "role": "Co-Owner - Lead Designer & Artist",
+    "bio": "Community, art, design, concepts, ideas, team leadership, and QA.",
+    "avatar": "Assets/Images/ProfpicElias.png"
+  },
+  {
+    "name": "Pavlo Polish",
+    "role": "Co-Owner & Game Programmer",
+    "bio": "Unity and Godot Developer, C# and GDScript programmer.",
+  "avatar": "Assets/Images/ProfpicPavlo_sq.png"
+  },
+  {
+    "name": "[NDA]",
+    "role": "Game Programmer",
+    "bio": "Unity and Godot Developer, C# and GDScript programmer.",
+    "avatar": "Assets/Images/Undisclosed.png"
+  },
+  {
+    "name": "Eden (anonymized)",
+    "role": "Designer & Artist",
+    "bio": "Art, design, concepts, ideas",
+    "avatar": "Assets/Images/ProfpicEden.png"
+  },
+  {
+    "name": "Free Spot",
+    "role": "Join Us",
+    "bio": "We're hiring for artists and programmers.",
+    "avatar": "Assets/Images/NewHire.png"
+  }
+]

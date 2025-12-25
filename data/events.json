@@ -1,0 +1,20 @@
+[
+  {
+    "name":"International College Jam #6",
+    "type":"Game Jam",
+    "date":"15-12-2025",
+    "location":"RASEKO, Raisio, Finland & Online",
+    "description":"Participated with a NullOS cozy cyberpunk game with hacking puzzles and a lot of easter eggs. and *OSKU.PNG*",
+    "image":"https://img.itch.zone/aW1nLzIzNjA3NDM2LnBuZw==/100x79%23/UQP8wW.png",
+    "status":"Attended"
+  },
+  {
+    "name":"Taitaja-9/Skills-9",
+    "type":"Demo",
+    "date":"28-10-2025",
+    "location":"RASEKO, Raisio, Finland",
+    "description":"Demoed our game and presented Game development to a younger, middle-school audience trough an interactive Unity debugging challenge in Inclination.",
+    "image":"https://taitaja2021.fi/wp-content/uploads/sites/12/2020/05/pikto_Taitaja9.png",
+    "status":"Attended"
+  }
+]

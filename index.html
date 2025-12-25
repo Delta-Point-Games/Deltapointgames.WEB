@@ -1,151 +1,88 @@
-<!DOCTYPE html>
-<html>
-
+<!doctype html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>DPG Official Website</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css"> 
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Delta Point Games</title>
+  <meta name="description" content="Delta Point Games — indie studio making games.">
+  <link rel="stylesheet" href="css/styles.css?v=20251225-1">
   <link rel="icon" type="image/x-icon" href="Assets/Images/DPGIcon.png">
 </head>
-
-<header>
-  <h1>DPG official!</h1>
-</header>
-
-<section class="Hero">
-  <img src="Assets/Images/Snow.gif" alt="Hero Banner">
-</section>
-
-
 <body>
-<h2>Welcome to the Deltapoint Games Official Website!</h2>
-
-<h4>This is our formal and official site for everything DPG related!</h4>
-
-<h2>About us:</h2>
-
-<section class="mission">
-  <p><strong>
-    Our mission here at Delta Point Games is to design and deliver creative, high-quality gaming experiences that inspire players and showcase the possibilities of interactive entertainment.
-  </p></strong>
-
-  <h3>At Delta Point Games, we are:</h3>
-</section>
-
-<section class="missiontext">
-  
-    <p>Developing original games with a focus on innovation, playability, and storytelling.</p>
-    
-    <p>Collaborating closely to manage the entire development process from concept to release.</p>
-
-    <p>Building a community around our projects and sharing our progress with transparency.</p>
-
-    <p>Practicing the use and implementation of AI in an ethical manner to speed up workflow inside programming environments.</p>
-  
- 
-</section>
-<h2>Our projects:</h2>
-  <section class="gallery">
-    <div class="gallery-container">
-      <div class="gallery-item">
-        <img src="Assets/Images/GOOBER DOOMER.png" alt="Project 1">
-        <h3>Goobers Dungeons And Brimstone </h3>
-        <p>Goobers Dungeons And Brimstone known internally as Project-Alpha, was our first formative project which was later shelved for development and source controll issues. Tough we plan to return to the idea at a later date.</p>
-
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand-wrap">
+        <img src="Assets/Images/DPGIcon.png" alt="Delta Point Games logo" class="brand-icon">
+        <a class="brand" href="#hero">Delta Point Games</a>
       </div>
-  
-      <div class="gallery-item">
-        <img src="Assets/Images/INCLINATION.png" alt="Project 2">
-        <h3>Inclination</h3>
-        <p>INCLINATION, known internally as Project-Delta is a 2D retro climbing game with survival elements and a planned local co-op implementation. Further, it serves as the base of the Taitaja-9 Demo.</p>
-
-      </div>
-  
-      <div class="gallery-item">
-        <img src="Assets/Images/TBA.png" alt="Project 3">
-        <h3>TBA</h3>
-        <p>A project we may or may not be working on... To be announced later.</p>
-        
-      </div>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="#projects">Projects</a>
+        <a href="#events">Events</a>
+        <a href="#team">Team</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="themeToggle" aria-label="Toggle theme" class="theme-toggle">🌓</button>
     </div>
-  </section>
-    <h2>Meet the Team</h2>
-  <section class="team">
-    <div class="team-container">
-  
-      <a href="https://www.linkedin.com/in/elias-lunden" target="_blank" rel="noopener noreferrer" class="team-link">
-        <div class="team-member">
-          <img src="Assets/Images/ProfpicElias.png" alt="Elias Lunden">
-          <h3>Elias Lunden</h3>
-          <h4>Lead Designer & Co-Owner</h4>
-          <p>I am a 17-year-old student from Raisio, currently in my second year of Software Development studies at Raseko.
-            My passions and skills revolve around IT and software engineering, with experience in software development, hardware maintenance, technical support, and database design.</p>
+  </header>
+
+  <main>
+    <section id="hero" class="hero" role="region" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <h1 id="hero-title">Delta Point Games</h1>
+        <p class="tagline">Small Finnish Indie GameDev Team Working On Exciting And Passionate Gaming Projects.</p>
+        <div class="hero-ctas">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn" href="#contact">Contact</a>
         </div>
-      </a>
-      
-      <a href="https://www.linkedin.com/in/pavlo-polish-7ab9952b7/" target="_blank" rel="noopener noreferrer" class="team-link">
-        <div class="team-member">
-          <img src="Assets/Images/ProfpicPavlo.jpg" alt="Pavlo Polish">
-          <h3>Pavlo Polish</h3>
-          <h4>Lead Programmer & Co-Owner</h4>
-          <p>18 year-old Unity C# Developer and second year Software Development student at Raseko from Turku. Responsible for designing and implementing core gameplay systems, writing clean and efficient C# code, and optimizing performance</p>
-        </div>
-      </a>
-      
-  
-      <div class="team-member">
-        <img src="Assets/Images/Applez.png" alt="Eden">
-        <h3>"Eden"</h3>
-        <h4>Designer & Artist</h4>
-        <p>This person has wished to stay out of the spotlight on our projects, but still partakes in designing functionalities / gameplay mechanics and creating artwork for our games. Their contribution regardless of their anonimity is highly appreciated.</p>
       </div>
+    </section>
 
-      <div class="team-member">
-        <img src="Assets/Images/NewHire.png" alt="You?">
-        <h3>Free Spot</h3>
-        <h4>Dedicated Audio Designer</h4>
-        <p>This could be you! Contact us on the company Email to send in a application!.</p>
-      </div>
+    <section id="about" class="about container" role="region" aria-labelledby="about-title">
+      <h2 id="about-title">About</h2>
+      <p>Our mission here at Delta Point Games is to design and deliver creative, 
+        high-quality gaming experiences that inspire players and showcase the possibilities 
+        of interactive entertainment. </p>
+      <p class="muted">Development philosophy: Player-first design, rapid prototyping, and polish over scope.</p>
+    </section>
 
-      <div class="team-member">
-        <img src="Assets/Images/NewHire.png" alt="You?">
-        <h3>Free Spot</h3>
-        <h4>Q/A & Media Specialist</h4>
-        <p>This could be you! Contact us on the company Email to send in a application!.</p>
+    <section id="projects" class="projects container" role="region" aria-labelledby="projects-title">
+      <h2 id="projects-title">Projects</h2>
+      <div class="projects-controls">
+        <label for="filterStatus">Filter:</label>
+        <select id="filterStatus" aria-label="Filter projects by status">
+          <option value="all">All</option>
+          <option value="Released">Released</option>
+          <option value="In Development">In Development</option>
+          <option value="On Hold">On Hold</option>
+          <option value="TBA">TBA</option>
+        </select>
       </div>
+      <div id="projectsGrid" class="grid" aria-live="polite"></div>
+    </section>
 
-      <div class="team-member">
-        <img src="Assets/Images/NewHire.png" alt="You?">
-        <h3>Free Spot</h3>
-        <h4>Dedicated Gameplay Designer</h4>
-        <p>This could be you! Contact us on the company Email to send in a application!.</p>
+    <section id="events" class="events container" role="region" aria-labelledby="events-title">
+      <h2 id="events-title">Events</h2>
+      <div id="eventsList" class="grid"></div>
+    </section>
+
+    <section id="team" class="team container" role="region" aria-labelledby="team-title">
+      <h2 id="team-title">Team</h2>
+      <div id="teamGrid" class="grid"></div>
+    </section>
+
+  </main>
+
+  <footer id="contact" class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p>Contact: <a href="mailto:dpg.contact@deltapointgames.com">dpg.contact@deltapointgames.com</a></p>
+        <p>Follow us: <a href="https://discord.gg/3438hc8qvA">Discord</a> · <a href="https://github.com/Delta-Point-Games/">GitHub</a> · <a href="https://www.linkedin.com/company/dpgteam/">LinkedIn</a></p>
       </div>
-  
+      <p class="copyright">© <span id="year"></span> Delta Point Games. All Rights Reserved.</p>
     </div>
-  </section>
-  
-  <section class="news">
-    <h2>News</h2>
+  </footer>
 
-    <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7389638520468025347" height="815" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
-    <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7388825384827654144" height="815" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
-    <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7387016086879170560" height="815" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
-    <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7385932713679138816" height="815" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
-  </section>
-    
-  <script src="js/script.js"></script>
+  <script src="js/scripts.js?v=20251225-2" type="module"></script>
 </body>
-<footer>
-  <div class="footer-container">
-    <h2>Contact Us</h2>
-    <p><strong>we'd love to hear from you! Reach out to us with questions, feedback, or collaboration ideas!</strong></p>
-
-    <div class="contact-info">
-      <p><strong>Linkedin official team:</strong></p> <a href="https://www.linkedin.com/company/dpgteam/"target="_blank" rel="noopener noreferrer" class="team-link"></a>
-      <p><strong>Email:</strong> dpg.contact@deltapointgames.com</p>
-    </div>
-
-    <p class="copyright">© 2025 Delta Point Games. All Rights Reserved.</p>
-  </div>
-</footer>
+</html>
