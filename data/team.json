@@ -24,6 +24,12 @@
     "avatar": "Assets/Images/ProfpicEden.png"
   },
   {
+    "name": "Osku",
+    "role": "Moral & Psychological Support, ethical advisor, and just a cat",
+    "bio": "cat",
+    "avatar": "Assets/Images/oskuprof.png"
+  },
+  {
     "name": "Free Spot",
     "role": "Join Us",
     "bio": "We're hiring for artists and programmers.",
