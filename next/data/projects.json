@@ -1,0 +1,28 @@
+[
+  {
+    "title": "NullOS DEMO (Submission for the International College Jam #6)",
+    "image": "Assets/Images/nullosdemo.png",
+    "description": "This is a early demo of a game jam project created by us, more specifically for the International college jam #6 which carried the main theme of Cozy cyberpunk",
+    "status": "Released",
+    "link": "https://nexu-ss.itch.io/nullos"
+  },
+  {
+    "title": "Inclination (Taitaja9 Demo project)",
+    "image": "Assets/Images/INCLINATION.png",
+    "description": "A 2D retro climbing game with survival elements and a planned local co-op implementation. Further, it serves as the base of the Taitaja-9 Demo.",
+    "status": "On Hold",
+    "link": "https://www.linkedin.com/feed/update/urn:li:activity:7388825437797249024"
+  },
+  {
+    "title": "Goober [REDACTED]",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEDmnOW2czN9X7A3ZG0Et4U5s-Pwj603dHjQ&s",
+    "description": "[REDACTED], ██████ █████.",
+    "status": "[REDACTED]"
+  },
+  {
+    "title": "TBA Project",
+    "image": "Assets/Images/TBA.png",
+    "description": "New prototype — keep an eye on devlogs.",
+    "status": "TBA"
+  }
+]
